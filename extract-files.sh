@@ -38,18 +38,6 @@ function blob_fixup() {
             done
             ;;
 
-        vendor/lib/hw/activity_recognition.msm8937.so | vendor/lib64/hw/activity_recognition.msm8937.so)
-            "${PATCHELF}" --set-soname activity_recognition.msm8937.so "${2}"
-            ;;
-
-        vendor/lib64/hw/gatekeeper.msm8937.so)
-            "${PATCHELF}" --set-soname gatekeeper.msm8937.so "${2}"
-            ;;
-
-        vendor/lib64/hw/keystore.msm8937.so)
-            "${PATCHELF}" --set-soname keystore.msm8937.so "${2}"
-            ;;
-
         vendor/lib/libmot_gpu_mapper.so | vendor/lib/libmmcamera_vstab_module.so)
             sed -i "s/libgui/libwui/" "${2}"
             ;;

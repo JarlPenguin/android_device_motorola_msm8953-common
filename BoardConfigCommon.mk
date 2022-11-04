@@ -4,14 +4,14 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/motorola/msm8937-common
+COMMON_PATH := device/motorola/msm8953-common
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := MSM8937
+TARGET_BOOTLOADER_BOARD_NAME := MSM8953
 TARGET_NO_BOOTLOADER := true
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8937
+TARGET_BOARD_PLATFORM := msm8953
 
 # Architecture
 TARGET_ARCH := arm64
@@ -163,4 +163,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-include vendor/motorola/msm8937-common/BoardConfigVendor.mk
+include vendor/motorola/msm8953-common/BoardConfigVendor.mk

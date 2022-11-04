@@ -9,7 +9,7 @@
 set -e
 
 # Override anything that may come from the calling environment
-BOARD=msm8937
+BOARD=msm8953
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
